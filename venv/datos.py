@@ -19,7 +19,7 @@ informacion = {
             'x-rapidapi-key': "5aafbd6efbmsh384cffe4fd6bdb6p11f423jsn23152897beea",
             'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"},
         "funcion": "requests.get(url, headers=headers, params=params)",
-"llaves": ('country', 'code', 'confirmed', 'recovered', 'critical', 'deaths', 'latitude', 'longitude', 'lastChange', 'lastUpdate')
+        "llaves": ('quoteResponse')
     },
     "biblia":{
         "url": "",

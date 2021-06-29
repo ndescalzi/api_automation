@@ -24,10 +24,17 @@ def llaves(caso):
     error = []
     if api[1] == 200:
         for i in api[0]:
-            if i in datos.informacion[caso]["llaves"]:
-                pass
+            if caso == "covid":
+                for e in i:
+                    if e in datos.informacion[caso]["llaves"]:
+                        pass
+                    else:
+                        error.append(e)
             else:
-                error.append(i)
+                if i in datos.informacion[caso]["llaves"]:
+                    pass
+                else:
+                    error.append(i)
     else:
         error.apend("Error en la respuesta. Codigo "+str(api[0]))
     return error

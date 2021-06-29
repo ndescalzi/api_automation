@@ -5,7 +5,7 @@ import funciones
 def impresion(error):
     print("Los errores son: ")
     for i in error:
-        print(i + ". ")
+        print(i, ". ")
 
 
 class Api_Estructura(unittest.TestCase):
@@ -23,9 +23,10 @@ class Api_Estructura(unittest.TestCase):
         rta = True
         if resultado:
             rta = False
+
             impresion(resultado)
         self.assertTrue(rta)
-
+    
     def test_para_finanzas(self):
         resultado = funciones.llaves("finanzas")
         rta = True
