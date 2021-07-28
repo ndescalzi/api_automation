@@ -4,7 +4,7 @@ import datos
 
 def llamado_API(caso):
     """
-    Retorna el estado de la consulta junto con la Json obtenido
+    Devuelve al sistema el Json y el estado de la consulta.
     """
     url = datos.informacion[caso]['url']
     r = requests.get(url, headers=datos.informacion[caso]["headers"], params=datos.informacion[caso]["params"])

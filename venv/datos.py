@@ -1,3 +1,7 @@
+"""
+Información relevante para el llamado de las API, y la comparacion de la estructura de la misma.
+"""
+
 informacion = {
     "nasa": {
         "url": "https://api.nasa.gov/planetary/apod?api_key=d3f8ZbiJGz1p8AXp3NhZRtlJXq1RRBmiHzST8Dc2",
@@ -21,10 +25,4 @@ informacion = {
         "funcion": "requests.get(url, headers=headers, params=params)",
         "llaves": ('quoteResponse')
     },
-    "biblia":{
-        "url": "",
-        "key": "86b4188a3755bd60f695e3cfe27fc670",
-
-
-    }
 }

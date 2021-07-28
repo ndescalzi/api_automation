@@ -1,13 +1,17 @@
 import unittest
 import funciones
 
-
+"""
+Impresion del error en caso de exisitir para su visualización en el reporte y tener las claro el error  
+"""
 def impresion(error):
     print("Los errores son: ")
     for i in error:
         print(i, ". ")
 
-
+"""
+Generacion de la clase para casos de prueba. 
+"""
 class Api_Estructura(unittest.TestCase):
 
     def test_para_nasa(self):
@@ -23,7 +27,6 @@ class Api_Estructura(unittest.TestCase):
         rta = True
         if resultado:
             rta = False
-
             impresion(resultado)
         self.assertTrue(rta)
     
